@@ -1,1 +1,195 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Signal — Startup Funding Tracker</title><link rel="stylesheet" href="style.css"><script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js" defer></script><script src="app.js" defer></script></head><body><header><a class="brand" href="./"><span class="logo">◈</span> signal<span class="brand-sub">VENTURE INTELLIGENCE</span></a><div class="live"><i></i> PUBLIC SOURCE DATA <span id="updated"></span></div></header><main><div class="intro"><div><div class="eyebrow">FOLLOW THE CAPITAL</div><h1>The next wave, in focus.</h1><p>Explore the companies, investors, and sectors shaping what comes next.</p></div><div class="window">90 DAY SNAPSHOT<br><strong id="window">Aug 06 — Nov 03, 2026</strong></div></div><section id="kpis" class="kpis" aria-label="Funding statistics"></section><section class="workspace"><aside class="filters"><div class="filter-heading">Refine the signal <button id="reset">Reset</button></div><label>SEARCH<input id="search" type="search" placeholder="Company or investor…"></label><label>ANNOUNCEMENT DATE<div class="dates"><input id="from" type="date" aria-label="Start date"><input id="to" type="date" aria-label="End date"></div></label><label>ROUND SIZE · USD MILLIONS<div class="dates"><input id="min" type="number" min="0" placeholder="Min" aria-label="Minimum amount in millions"><input id="max" type="number" min="0" placeholder="Max" aria-label="Maximum amount in millions"></div></label><label>FUNDING STAGE<select id="stage"><option value="">All stages</option></select></label><div class="label">SECTORS <span id="sector-count"></span></div><div id="sectors"></div><div class="source-note">Every round links to a public article. Sector and investor extraction are automated; coverage is a sample of reported deals.</div></aside><div class="content"><div class="toolbar"><nav aria-label="Visualization"><button class="tab active" data-view="bubbles">◉ <span>Funding universe</span></button><button class="tab" data-view="network">⌘ <span>Investor network</span></button><button class="tab" data-view="flow">▥ <span>Sector flow</span></button></nav><span id="showing"></span></div><div class="chart-heading"><div><h2 id="view-title">A universe of opportunity</h2><p id="view-subtitle">Each circle is a funding round. Size reflects capital raised.</p></div><span class="hint">CLICK TO EXPLORE ↗</span></div><div id="status" role="status">Loading public funding data…</div><div id="chart"></div><div id="legend"></div><section id="flow-extra" hidden></section><div class="deal-header"><h3>Latest signals</h3><span>ANNOUNCED ROUNDS</span></div><div class="table-wrap"><table><thead><tr><th>Company</th><th>Sector / Stage</th><th>Raised</th><th>Announced</th></tr></thead><tbody id="deals"></tbody></table></div></div></section><footer><span>signal / A clearer view of venture.</span><span id="coverage"></span></footer></main><div id="scrim" hidden></div><aside id="detail" aria-label="Round details" hidden><button id="close" aria-label="Close details">×</button><div id="detail-body"></div></aside><div id="tooltip" role="tooltip"></div></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Signal — Startup Funding Tracker</title>
+  <meta name="description" content="A readable view of publicly reported startup funding: rounds, investors, and sectors.">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('signal-theme');
+        if (t !== 'light' && t !== 'dark') {
+          t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <div class="chrome">
+    <header class="top">
+      <a class="brand" href="#overview"><span class="mark" aria-hidden="true">◈</span> Signal</a>
+      <nav class="nav" id="nav" aria-label="Sections"></nav>
+      <div class="top-actions">
+        <p class="updated" id="updated"></p>
+        <button type="button" id="theme" class="ghost">Theme</button>
+      </div>
+    </header>
+    <section class="filters" aria-label="Filters">
+      <div class="filters-bar">
+        <button type="button" id="filter-toggle" class="ghost" aria-expanded="true" aria-controls="filter-panel">Hide filters</button>
+        <p id="result-count" class="result-count"></p>
+        <button type="button" id="clear-all" class="text-btn" hidden>Clear all</button>
+      </div>
+      <div id="filter-panel">
+        <div class="filter-grid">
+          <label class="grow">Search
+            <input id="search" type="search" placeholder="Company or investor" autocomplete="off">
+          </label>
+          <label>From
+            <input id="from" type="date" aria-label="Start date">
+          </label>
+          <label>To
+            <input id="to" type="date" aria-label="End date">
+          </label>
+          <label>Min, $ millions
+            <input id="min" type="number" min="0" step="1" inputmode="decimal" placeholder="No min" aria-label="Minimum amount in millions of dollars">
+          </label>
+          <label>Max, $ millions
+            <input id="max" type="number" min="0" step="1" inputmode="decimal" placeholder="Any" aria-label="Maximum amount in millions of dollars">
+          </label>
+          <label>Stage
+            <select id="stage"><option value="">All stages</option></select>
+          </label>
+        </div>
+        <div class="sector-row">
+          <span class="field-label" id="sector-label">Sectors</span>
+          <div id="sectors" class="sector-picks" role="group" aria-labelledby="sector-label"></div>
+          <button type="button" id="sectors-all" class="text-btn">Select all</button>
+        </div>
+      </div>
+      <div id="chips" class="chips" aria-label="Active filters"></div>
+    </section>
+  </div>
+
+  <main id="content">
+    <p id="status" class="status" role="status">Loading public funding data…</p>
+
+    <section id="view-overview" class="view">
+      <div class="wrap">
+        <p class="eyebrow" id="window-label"></p>
+        <h1>Where the capital went</h1>
+        <p class="lede" id="lede">Publicly reported rounds, with the companies, investors, and sectors behind them.</p>
+        <div id="kpis" class="stats" aria-label="Headline statistics"></div>
+        <h2>Where money is flowing</h2>
+        <p id="narrative" class="narrative"></p>
+        <h3>Sectors</h3>
+        <p class="hint">Choose a sector to filter every view.</p>
+        <div id="sector-cards" class="card-grid"></div>
+        <h3>Active investors</h3>
+        <p class="hint">Choose an investor to filter every view. Deal counts use merged names.</p>
+        <div id="investor-cards" class="card-grid"></div>
+        <h3>Largest rounds</h3>
+        <div id="round-cards" class="round-list"></div>
+        <h3>Momentum</h3>
+        <div id="momentum" class="momentum"></div>
+        <footer class="foot" id="foot"></footer>
+      </div>
+    </section>
+
+    <section id="view-startups" class="view" hidden>
+      <div class="view-head">
+        <div>
+          <h2>Startups</h2>
+          <p>Each circle is a disclosed round. Size is capital raised. Drag to pan, scroll or pinch to zoom, and click a circle for the full round.</p>
+        </div>
+        <div class="zoom-controls" aria-label="Chart zoom">
+          <button type="button" data-zoom="in" aria-label="Zoom in">+</button>
+          <button type="button" data-zoom="out" aria-label="Zoom out">−</button>
+          <button type="button" data-zoom="reset">Reset</button>
+        </div>
+      </div>
+      <div class="chart-frame">
+        <div id="bubble-chart" class="chart"></div>
+        <div id="bubble-legend" class="legend"></div>
+      </div>
+    </section>
+
+    <section id="view-investors" class="view" hidden>
+      <div class="view-head">
+        <div>
+          <h2>Investors</h2>
+          <p>Named investors and the rounds they joined. Larger nodes are investors with more deals. Names appear when you hover. Drag to pan and scroll to zoom.</p>
+        </div>
+        <label class="slider">Top investors
+          <input id="net-cap" type="range" min="8" max="48" value="24" aria-valuemin="8" aria-valuemax="48">
+          <output id="net-cap-out" for="net-cap">24</output>
+        </label>
+        <div class="zoom-controls" aria-label="Chart zoom">
+          <button type="button" data-zoom="in" aria-label="Zoom in">+</button>
+          <button type="button" data-zoom="out" aria-label="Zoom out">−</button>
+          <button type="button" data-zoom="reset">Reset</button>
+        </div>
+      </div>
+      <p id="net-note" class="hint chart-note"></p>
+      <div class="chart-frame">
+        <div id="net-chart" class="chart"></div>
+        <div class="legend">
+          <span><i class="swatch investor-swatch"></i> Investor</span>
+          <span><i class="swatch startup-swatch"></i> Startup round</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="view-sectors" class="view" hidden>
+      <div class="wrap wide">
+        <div class="view-head">
+          <div>
+            <h2>Sectors</h2>
+            <p>Monthly disclosed capital by sector. Hover a bar for the amount, or click it to filter. Scroll on for the stage breakdown.</p>
+          </div>
+          <div class="zoom-controls" aria-label="Chart zoom">
+            <button type="button" data-zoom="in" aria-label="Zoom in">+</button>
+            <button type="button" data-zoom="out" aria-label="Zoom out">−</button>
+            <button type="button" data-zoom="reset">Reset</button>
+          </div>
+        </div>
+        <div class="chart-frame tall">
+          <div id="flow-chart" class="chart"></div>
+          <div id="flow-legend" class="legend"></div>
+        </div>
+        <div id="flow-extra" class="flow-extra"></div>
+      </div>
+    </section>
+
+    <section id="view-explore" class="view" hidden>
+      <div class="wrap wide">
+        <div class="view-head">
+          <div>
+            <h2>Explore</h2>
+            <p>Every round that matches the filters. Sort any column, open a row for details, or follow the source link.</p>
+          </div>
+        </div>
+        <div class="table-scroll">
+          <table id="rounds-table">
+            <caption class="visually-hidden">Funding rounds matching the current filters</caption>
+            <thead></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="scrim" class="scrim" hidden></div>
+  <aside id="drawer" class="drawer" aria-hidden="true" hidden>
+    <div class="drawer-top">
+      <button type="button" id="drawer-back" class="ghost" hidden>Back</button>
+      <button type="button" id="drawer-close" class="ghost">Close</button>
+    </div>
+    <div id="drawer-body"></div>
+  </aside>
+  <div id="tooltip" class="tooltip" role="tooltip" hidden></div>
+  <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
