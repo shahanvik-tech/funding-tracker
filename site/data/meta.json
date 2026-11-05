@@ -1,18 +1,18 @@
 {
-  "last_run": "2026-11-05T02:50:38.746383+00:00",
+  "last_run": "2026-11-05T16:30:46.489696+00:00",
   "as_of": "2026-11-05",
   "window_start": "2021-11-05",
-  "round_count": 747,
+  "round_count": 752,
   "by_year": {
     "2021": 7,
     "2022": 81,
     "2023": 84,
     "2024": 103,
     "2025": 76,
-    "2026": 396
+    "2026": 401
   },
   "by_extraction": {
-    "heuristic": 639,
+    "heuristic": 644,
     "sec-form-d": 108
   },
   "counts_per_source": {
@@ -23,8 +23,8 @@
     "PR Newswire": 38,
     "TechCrunch": 36,
     "GlobeNewswire": 29,
-    "finance.yahoo.com": 20,
-    "www.citybiz.co": 11,
+    "finance.yahoo.com": 21,
+    "www.citybiz.co": 12,
     "latamlist.com": 10,
     "spacenews.com": 10,
     "www.unite.ai": 8,
@@ -32,6 +32,7 @@
     "thequantuminsider.com": 5,
     "www.healthcareittoday.com": 4,
     "www.housingwire.com": 4,
+    "labusinessjournal.com": 3,
     "www.adexchanger.com": 3,
     "www.tectonicdefense.com": 3,
     "bhbusiness.com": 3,
@@ -42,9 +43,9 @@
     "www.businessinsider.com": 3,
     "www.glossy.co": 3,
     "newscord.org": 2,
+    "dallasinnovates.com": 2,
     "quantumcomputingreport.com": 2,
     "www.techstars.com": 2,
-    "labusinessjournal.com": 2,
     "www.foodbusinessnews.net": 2,
     "fintech.global": 2,
     "www.saasrise.com": 2,
@@ -54,6 +55,7 @@
     "www.fiercebiotech.com": 2,
     "www.corporatecomplianceinsights.com": 1,
     "www.law360.com": 1,
+    "www.washingtontechnology.com": 1,
     "www.internationalaccountingbulletin.com": 1,
     "www.hjnews.com": 1,
     "evertiq.com": 1,
@@ -73,7 +75,6 @@
     "insights.citeline.com": 1,
     "www.cnbc.com": 1,
     "www.adventinternational.com": 1,
-    "dallasinnovates.com": 1,
     "www.bloomberg.com": 1,
     "tech.eu": 1,
     "virginiabusiness.com": 1,
@@ -112,10 +113,19 @@
     "www.lifebiosciences.com": 1,
     "stpetecatalyst.com": 1
   },
-  "collection_mode": "backfill",
+  "collection_mode": "refresh",
   "error_summary": {
-    "count": 0,
-    "top": []
+    "count": 3,
+    "top": [
+      [
+        "403 Client Error: Forbidden for url: https://www",
+        2
+      ],
+      [
+        "403 Client Error: Forbidden for url: https://htw",
+        1
+      ]
+    ]
   },
   "notes": [
     "Dates after the collection date are excluded. The window is the five years ending on that date.",

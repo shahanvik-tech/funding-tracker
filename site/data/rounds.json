@@ -1,5 +1,46 @@
 [
   {
+    "company": "Phaze",
+    "description": "Phaze , a Utah-based remote computing technology startup, has raised $8.75 million in seed funding led by Andreessen Horowitz (a16z), with participation from Indie, NextView, Makers and Lerer Hippeau , to expand its platform for providing employees and AI agents with secure remote access to high-performance computers.",
+    "sector": "Robotics/Hardware",
+    "stage": "Seed",
+    "amount_usd": 8750000,
+    "date": "2026-11-04",
+    "lead_investors": [
+      "Andreessen Horowitz (a16z)"
+    ],
+    "other_investors": [
+      "Indie",
+      "NextView",
+      "Makers",
+      "Lerer Hippeau",
+      "AI agents"
+    ],
+    "source_url": "https://www.citybiz.co/article/929308/phaze-raises-8-75-million-seed-round-led-by-a16z-for-ai-agent-remote-computer-access/",
+    "source_name": "www.citybiz.co",
+    "evidence": "Phaze Raises $8.75 Million",
+    "extraction": "heuristic"
+  },
+  {
+    "company": "Finpilot",
+    "description": "Finpilot Raises $10 Million Series A Led by Lobby Capital to Bring AI Agents to Institutional Investors Business Wire Wed, November 4, 2026 at 7:00 AM PST 3 min read Madrona participates in the round.",
+    "sector": "Health/Bio",
+    "stage": "Series A",
+    "amount_usd": 10000000,
+    "date": "2026-11-04",
+    "lead_investors": [
+      "November 4",
+      "2026 at 7:00 AM PST 3 min read Madrona participates in"
+    ],
+    "other_investors": [
+      "Madrona"
+    ],
+    "source_url": "https://finance.yahoo.com/technology/ai/articles/finpilot-raises-10-million-series-150000307.html",
+    "source_name": "finance.yahoo.com",
+    "evidence": "Finpilot Raises $10 Million",
+    "extraction": "heuristic"
+  },
+  {
     "company": "Tutor Intelligence",
     "description": "Tutor Intelligence , a Watertown, MA-based robotics research and deployment company, raised $75M in Series B funding.",
     "sector": "Robotics/Hardware",
@@ -242,6 +283,20 @@
     "extraction": "heuristic"
   },
   {
+    "company": "Northwood",
+    "description": "Transactions Companies Northwood Space, a builder of satellite antennas and other hardware for space ground network infrastructure, has fetched $375 million in Series C capital from investors to accelerate its production and team expansion efforts.",
+    "sector": "Defense/Space",
+    "stage": "Series C",
+    "amount_usd": 375000000,
+    "date": "2026-11-02",
+    "lead_investors": [],
+    "other_investors": [],
+    "source_url": "https://www.washingtontechnology.com/companies/2026/11/northwood-closes-375m-series-c-raise-space-network-ambitions/416973/?oref=wt-homepage-river",
+    "source_name": "www.washingtontechnology.com",
+    "evidence": "Northwood closes $375M",
+    "extraction": "heuristic"
+  },
+  {
     "company": "Kodiact",
     "description": "Kodiact , a, San Francisco, CA-based provider of an intelligent simulation platform for direct materials sourcing, raised $2.5M in pre-seed funding.",
     "sector": "Dev Tools/Infra",
@@ -258,6 +313,24 @@
     "source_url": "https://www.finsmes.com/2026/11/kodiact-raises-2-5m-in-pre-seed-funding.html",
     "source_name": "www.finsmes.com",
     "evidence": "Kodiact Raises $2.5M",
+    "extraction": "heuristic"
+  },
+  {
+    "company": "Food Supply Startup",
+    "description": "Food Supply Startup Lands a $6 Million Seed Funding Round",
+    "sector": "Defense/Space",
+    "stage": "Seed",
+    "amount_usd": 6000000,
+    "date": "2026-11-02",
+    "lead_investors": [],
+    "other_investors": [
+      "Venice-based Amplify.LA",
+      "Supply Change Capital",
+      "another unnamed Los Angeles-based venture firm"
+    ],
+    "source_url": "https://labusinessjournal.com/technology/food-supply-startup-lands-a-6-million-seed-funding-round/",
+    "source_name": "labusinessjournal.com",
+    "evidence": "Food Supply Startup Lands a $6 Million",
     "extraction": "heuristic"
   },
   {
@@ -1171,6 +1244,29 @@
     "source_url": "https://www.finsmes.com/2026/10/bob-raises-5-5m-in-seed-funding.html",
     "source_name": "www.finsmes.com",
     "evidence": "BOB Raises $5.5M",
+    "extraction": "heuristic"
+  },
+  {
+    "company": "Zippy",
+    "description": "Dallas-based fintech startup Zippy, a lender and loan servicer for manufactured homes, raised $20 million in a Series C round.",
+    "sector": "Fintech",
+    "stage": "Series C",
+    "amount_usd": 20000000,
+    "date": "2026-10-21",
+    "lead_investors": [
+      "ex-Remington Hospitality CEO Sloan Dean"
+    ],
+    "other_investors": [
+      "Andreessen Horowitz",
+      "Founders Fund",
+      "Lux Capital",
+      "8VC",
+      "Aleph",
+      "Lightspeed Venture Partners"
+    ],
+    "source_url": "https://dallasinnovates.com/dallas-fintech-startup-zippy-raises-20m-to-accelerate-lending-platform-for-manufactured-homes/",
+    "source_name": "dallasinnovates.com",
+    "evidence": "Dallas Fintech Startup Zippy Raises $20M",
     "extraction": "heuristic"
   },
   {
