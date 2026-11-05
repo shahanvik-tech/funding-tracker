@@ -13,12 +13,11 @@ python3 scraper/scrape.py
 
 Open **http://localhost:8080**. On a Python installation that disallows `--user`, use a virtual environment (`python3 -m venv .venv`, then `.venv/bin/pip install -r scraper/requirements.txt`).
 
-The included snapshot ends **2026-11-03**, covering 90 calendar days starting **2026-08-06**. To collect a different window:
+The included snapshot is a five-year public sample ending on the collection date. News coverage is densest in late 2026. Earlier quarters are a smaller article sample, plus a monthly slice of US Form D filings. See `site/data/meta.json` for the exact window, counts, and gaps. To refresh the recent window and redeploy, the daily GitHub Actions workflow runs `python3 scraper/collect.py --mode refresh`. A full historical collection is:
 
 ```bash
-python3 scraper/scrape.py --as-of 2026-11-03 --days 90 --pages 16
-python3 scraper/scrape.py --offline  # deterministic rebuild using saved HTTP responses
-python3 scraper/scrape.py --refresh  # force a fresh fetch of all pages
+python3 scraper/collect.py --mode backfill
+python3 scraper/collect.py --mode refresh   # last few weeks, merged into the snapshot
 ```
 
 The default collector caches discovery feeds/pages for one hour and articles for seven days. Remove `data/cache/` for a completely clean collection. Network access is required for collection, the D3 CDN, and web fonts. The dashboard gives an explicit message if D3 or the JSON cannot load.
@@ -38,10 +37,10 @@ Publication dates are used; weekly roundup dates may lag the original announceme
 
 ## Dashboard
 
-- **Funding universe:** force-packed circles sized by capital and colored by sector. Click a circle or a recent-deal row for full details and its article.
-- **Investor network:** named investor/startup links, investor sizes based on deal count, labels for repeated investors, hover highlighting, draggable nodes, and investor profiles. For readability, the graph shows up to 65 investors and 110 startups; KPIs still use all filtered rounds.
-- **Sector flow:** stacked monthly capital bars, sector/stage capital and deal-count heatmap, and generated analysis of leading sectors, biggest rounds, active investors, and last-30-day versus prior-30-day momentum.
-- Sector checkboxes, stage, dates, USD amount bounds (millions), and company/investor search apply to every view, KPI, summary, and recent-round list. The list displays the latest 15 matches. Reset restores the snapshot window.
+- **Overview:** headline counts, capital by quarter (bars), deals by quarter (line), and the latest rows.
+- **Who's Hot:** investor and sector cards for this week, 30 days, 90 days, or 1 year, with a share-to-X link on each card.
+- **Explore:** sortable table of every row in the five-year window, with source links.
+- **Pitch Matcher:** client-side keyword similarity over descriptions, sectors, and stages, weighted toward recent deals.
 
 ## Verification
 

@@ -115,7 +115,7 @@ def article(item,start,end):
    d=dateof(x.get('content') or x.get('datetime'))
    if d:date=d;break
  if not date:
-  m=re.search(r'/(2026)/(\d{2})/(\d{2})/',url)
+  m=re.search(r'/(20\d{2})/(\d{2})/(\d{2})/',url)
   if m:date=dt.date(*map(int,m.groups()))
  if not date or not start<=date<=end:return []
  body=soup.select_one('.td-post-content,.entry-content,.wp-block-post-content,.article-body,.article-content') or soup.select_one('article') or soup.select_one('main') or soup
