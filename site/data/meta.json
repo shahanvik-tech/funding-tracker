@@ -1,7 +1,7 @@
 {
-  "last_run": "2026-11-05T16:30:46.489696+00:00",
-  "as_of": "2026-11-05",
-  "window_start": "2021-11-05",
+  "last_run": "2026-11-06T15:58:42.420251+00:00",
+  "as_of": "2026-11-06",
+  "window_start": "2021-11-06",
   "round_count": 752,
   "by_year": {
     "2021": 7,
@@ -22,8 +22,8 @@
     "www.finsmes.com": 54,
     "PR Newswire": 38,
     "TechCrunch": 36,
-    "GlobeNewswire": 29,
-    "finance.yahoo.com": 21,
+    "GlobeNewswire": 28,
+    "finance.yahoo.com": 22,
     "www.citybiz.co": 12,
     "latamlist.com": 10,
     "spacenews.com": 10,

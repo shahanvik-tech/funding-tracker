@@ -585,17 +585,19 @@
   },
   {
     "company": "Ozlo",
-    "description": "29, 2026 (GLOBE NEWSWIRE) -- Ozlo , the sleep technology company behind Ozlo Sleepbuds®, announced it has raised $22 million in Series B funding led by Modi Ventures.",
+    "description": "Ozlo Raises $22 Million Series B Led by Modi Ventures to Expand Its Sleep Technology Ecosystem Ozlo Sleep October 29, 2026 4 min read RMD DKNG Ozlo Sleep Funding will accelerate product development, sleep research, and new technologies addressing a broader range of sleep and nighttime health needs Funding will accelerate product development, sleep ",
     "sector": "Health/Bio",
     "stage": "Series B",
     "amount_usd": 22000000,
     "date": "2026-10-29",
     "lead_investors": [
-      "Modi Ventures"
+      "sleep research",
+      "technologies addressing a broader range of sleep",
+      "nighttime health needs"
     ],
     "other_investors": [],
-    "source_url": "https://www.globenewswire.com/news-release/2026/10/29/3391321/0/en/ozlo-raises-22-million-series-b-led-by-modi-ventures-to-expand-its-sleep-technology-ecosystem.html",
-    "source_name": "GlobeNewswire",
+    "source_url": "https://finance.yahoo.com/healthcare/articles/ozlo-raises-22-million-series-130000819.html",
+    "source_name": "finance.yahoo.com",
     "evidence": "Ozlo Raises $22 Million",
     "extraction": "heuristic"
   },
