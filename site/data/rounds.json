@@ -41,6 +41,39 @@
     "extraction": "heuristic"
   },
   {
+    "company": "EloElo Group",
+    "description": "EloElo Group Raises $80 Million in Series C Led by Hornbill Capital and NBCUniversal to Reimagine Mobile Entertainment for the Next Billion Users EloElo Group's portfolio: Story TV, Dolphin AI, Master and Voxy AI.",
+    "sector": "AI/ML",
+    "stage": "Series C",
+    "amount_usd": 80000000,
+    "date": "2026-11-04",
+    "lead_investors": [
+      "Hornbill Capital",
+      "Dolphin AI",
+      "Master",
+      "Voxy AI"
+    ],
+    "other_investors": [],
+    "source_url": "https://finance.yahoo.com/media-advertising/articles/eloelo-group-raises-80-million-113000409.html",
+    "source_name": "finance.yahoo.com",
+    "evidence": "EloElo Group Raises $80 Million",
+    "extraction": "heuristic"
+  },
+  {
+    "company": "Cowboy",
+    "description": "CEO and founder Chad DePue founded Cowboy in 2025 after realizing the internet was on the verge of its next App Store moment with AI.",
+    "sector": "Security",
+    "stage": "Seed",
+    "amount_usd": 5000000,
+    "date": "2026-11-04",
+    "lead_investors": [],
+    "other_investors": [],
+    "source_url": "https://finance.yahoo.com/technology/ai/articles/cowboy-raises-5-million-seed-170000331.html",
+    "source_name": "finance.yahoo.com",
+    "evidence": "Cowboy Raises $5 Million",
+    "extraction": "heuristic"
+  },
+  {
     "company": "Tutor Intelligence",
     "description": "Tutor Intelligence , a Watertown, MA-based robotics research and deployment company, raised $75M in Series B funding.",
     "sector": "Robotics/Hardware",
@@ -545,6 +578,22 @@
     "extraction": "heuristic"
   },
   {
+    "company": "Upwind Security",
+    "description": "Reviewed by Codex validator (AI) · 30 Oct 2026 Upwind’s $400M bet Upwind Security raised a $400 million Series C round at a $3.8 billion valuation, with Bessemer Venture Partners leading the financing and Canapi Ventures participating alongside existing investors.",
+    "sector": "Security",
+    "stage": "Series C",
+    "amount_usd": 400000000,
+    "date": "2026-10-29",
+    "lead_investors": [
+      "Bessemer Venture Partners"
+    ],
+    "other_investors": [],
+    "source_url": "https://newscord.org/article/upwind-security-raises-400-million-series-c-at-38-billion-valuation--Story_20261028_Upwindraises400Maftef4469c24",
+    "source_name": "newscord.org",
+    "evidence": "Upwind Security Raises $400 Million",
+    "extraction": "heuristic"
+  },
+  {
     "company": "SpendRule",
     "description": "29, 2026 (GLOBE NEWSWIRE) -- SpendRule , an AI contract enforcement platform that ensures health systems pay exactly what their purchased services contracts say, today announced a $4 million seed funding round led by Mark Cuban’s Radical Investments , with participation from Zeal Capital Partners .",
     "sector": "Security",
@@ -599,6 +648,22 @@
     "source_url": "https://finance.yahoo.com/healthcare/articles/ozlo-raises-22-million-series-130000819.html",
     "source_name": "finance.yahoo.com",
     "evidence": "Ozlo Raises $22 Million",
+    "extraction": "heuristic"
+  },
+  {
+    "company": "Midstream Health",
+    "description": "Midstream Health has raised $20 million in Series A financing led by Valtruis , bringing its total funding to $29.2 million as the healthcare financial technology company expands its artificial intelligence platform across a network representing more than 250 hospitals nationwide.",
+    "sector": "Health/Bio",
+    "stage": "Series A",
+    "amount_usd": 20000000,
+    "date": "2026-10-29",
+    "lead_investors": [
+      "Valtruis"
+    ],
+    "other_investors": [],
+    "source_url": "https://www.citybiz.co/article/926442/midstream-health-raises-20-million-series-a-led-by-valtruis-to-expand-ai-financial-platform/",
+    "source_name": "www.citybiz.co",
+    "evidence": "Midstream Health Raises $20 Million",
     "extraction": "heuristic"
   },
   {
