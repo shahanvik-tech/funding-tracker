@@ -1,5 +1,21 @@
 [
   {
+    "company": "Daylight",
+    "description": "Daylight says revenue has grown more than 40-fold over the past year.",
+    "sector": "Security",
+    "stage": "Series B",
+    "amount_usd": 80000000,
+    "date": "2026-11-10",
+    "lead_investors": [
+      "Growth Equity at Goldman Sachs Alternatives"
+    ],
+    "other_investors": [],
+    "source_url": "https://www.calcalistech.com/ctechnews/article/x8vrvo7dt",
+    "source_name": "www.calcalistech.com",
+    "evidence": "Israeli cyber startup Daylight raises $80 million",
+    "extraction": "heuristic"
+  },
+  {
     "company": "Phaze",
     "description": "Phaze , a Utah-based remote computing technology startup, has raised $8.75 million in seed funding led by Andreessen Horowitz (a16z), with participation from Indie, NextView, Makers and Lerer Hippeau , to expand its platform for providing employees and AI agents with secure remote access to high-performance computers.",
     "sector": "Robotics/Hardware",
