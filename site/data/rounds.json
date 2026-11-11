@@ -13013,19 +13013,5 @@
     "source_name": "spacenews.com",
     "evidence": "Fleet Space raises $26.4 million",
     "extraction": "heuristic"
-  },
-  {
-    "company": "Earth Brands Inc.",
-    "description": "Earth Brands Inc. reported $727,000 sold in a US Form D private placement, based in Albertson, NY. Industry group: Other Technology. The filing lists 8 investors already in the offering, without naming them.",
-    "sector": "Dev Tools/Infra",
-    "stage": "Private placement",
-    "amount_usd": 727000,
-    "date": "2021-11-10",
-    "lead_investors": [],
-    "other_investors": [],
-    "source_url": "https://www.sec.gov/Archives/edgar/data/1953553/000195355322000001/0001953553-22-000001-index.html",
-    "source_name": "SEC EDGAR Form D",
-    "evidence": "Form D total amount sold $727,000; industry Other Technology",
-    "extraction": "sec-form-d"
   }
 ]

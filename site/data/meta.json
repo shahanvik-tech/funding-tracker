@@ -1,10 +1,10 @@
 {
-  "last_run": "2026-11-10T16:27:47.921023+00:00",
-  "as_of": "2026-11-10",
-  "window_start": "2021-11-10",
-  "round_count": 757,
+  "last_run": "2026-11-11T16:16:38.148167+00:00",
+  "as_of": "2026-11-11",
+  "window_start": "2021-11-11",
+  "round_count": 756,
   "by_year": {
-    "2021": 7,
+    "2021": 6,
     "2022": 81,
     "2023": 84,
     "2024": 103,
@@ -13,11 +13,11 @@
   },
   "by_extraction": {
     "heuristic": 649,
-    "sec-form-d": 108
+    "sec-form-d": 107
   },
   "counts_per_source": {
     "Crunchbase News": 238,
-    "SEC EDGAR Form D": 108,
+    "SEC EDGAR Form D": 107,
     "www.calcalistech.com": 60,
     "www.finsmes.com": 54,
     "PR Newswire": 38,
