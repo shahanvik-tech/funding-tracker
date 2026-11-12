@@ -1,18 +1,18 @@
 {
-  "last_run": "2026-11-11T16:16:38.148167+00:00",
-  "as_of": "2026-11-11",
-  "window_start": "2021-11-11",
-  "round_count": 756,
+  "last_run": "2026-11-12T16:51:46.073750+00:00",
+  "as_of": "2026-11-12",
+  "window_start": "2021-11-12",
+  "round_count": 760,
   "by_year": {
     "2021": 6,
     "2022": 81,
     "2023": 84,
     "2024": 103,
     "2025": 76,
-    "2026": 406
+    "2026": 410
   },
   "by_extraction": {
-    "heuristic": 649,
+    "heuristic": 653,
     "sec-form-d": 107
   },
   "counts_per_source": {
@@ -32,6 +32,7 @@
     "thequantuminsider.com": 5,
     "www.healthcareittoday.com": 4,
     "www.housingwire.com": 4,
+    "www.fiercebiotech.com": 3,
     "labusinessjournal.com": 3,
     "newscord.org": 3,
     "www.adexchanger.com": 3,
@@ -52,7 +53,9 @@
     "www.satellitetoday.com": 2,
     "www.securityweek.com": 2,
     "www.grocerydive.com": 2,
-    "www.fiercebiotech.com": 2,
+    "q-ctrl.com": 1,
+    "Fortune Term Sheet": 1,
+    "uk.finance.yahoo.com": 1,
     "www.corporatecomplianceinsights.com": 1,
     "www.law360.com": 1,
     "www.washingtontechnology.com": 1,
@@ -115,11 +118,15 @@
   },
   "collection_mode": "refresh",
   "error_summary": {
-    "count": 2,
+    "count": 3,
     "top": [
       [
         "403 Client Error: Forbidden for url: https://www",
         2
+      ],
+      [
+        "401 Client Error: HTTP Forbidden for url: https:",
+        1
       ]
     ]
   },

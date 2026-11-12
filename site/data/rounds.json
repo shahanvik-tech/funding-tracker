@@ -1,5 +1,25 @@
 [
   {
+    "company": "Q-CTRL",
+    "description": "The oversubscribed round mints the newest quantum-sector unicorn and places Q-CTRL among the best-capitalized quantum firms in private markets.",
+    "sector": "Defense/Space",
+    "stage": "Series C",
+    "amount_usd": 290000000,
+    "date": "2026-11-12",
+    "lead_investors": [
+      "Salesforce Ventures"
+    ],
+    "other_investors": [
+      "Bullhound Capital",
+      "Affinity Partners",
+      "a global syndicate of new"
+    ],
+    "source_url": "https://q-ctrl.com/blog/q-ctrl-secures-us-290-million-series-c-funding-led-by-salesforce-ventures-to-accelerate-the-convergence-of-quantum-and-ai",
+    "source_name": "q-ctrl.com",
+    "evidence": "Q-CTRL Secures US$290 Million",
+    "extraction": "heuristic"
+  },
+  {
     "company": "Daylight",
     "description": "Daylight says revenue has grown more than 40-fold over the past year.",
     "sector": "Security",
@@ -13,6 +33,60 @@
     "source_url": "https://www.calcalistech.com/ctechnews/article/x8vrvo7dt",
     "source_name": "www.calcalistech.com",
     "evidence": "Israeli cyber startup Daylight raises $80 million",
+    "extraction": "heuristic"
+  },
+  {
+    "company": "Alta",
+    "description": "That hasn’t deterred a startup called Alta from trying to lure banks and big companies with a blockchain of its own.",
+    "sector": "Health/Bio",
+    "stage": "Series A",
+    "amount_usd": 48000000,
+    "date": "2026-11-10",
+    "lead_investors": [
+      "Index Ventures"
+    ],
+    "other_investors": [],
+    "source_url": "https://fortune.com/2026/11/10/alta-series-a-airwallex/",
+    "source_name": "Fortune Term Sheet",
+    "evidence": "Alta raises $48 million",
+    "extraction": "heuristic"
+  },
+  {
+    "company": "T-Therapeutics",
+    "description": "T-Therapeutics has pulled in a $133 million series B round courtesy of some of the biggest names in pharma to take a pair of T-cell receptor (TCR) CD3 bispecific candidates into the clinic.",
+    "sector": "Health/Bio",
+    "stage": "Series B",
+    "amount_usd": 133000000,
+    "date": "2026-11-05",
+    "lead_investors": [
+      "Advent Life Sciences",
+      "the British Business Bank"
+    ],
+    "other_investors": [],
+    "source_url": "https://www.fiercebiotech.com/biotech/t-therapeutics-raises-133m-series-b-big-pharma-backers-tow",
+    "source_name": "www.fiercebiotech.com",
+    "evidence": "T-Therapeutics raises $133M",
+    "extraction": "heuristic"
+  },
+  {
+    "company": "Pliant",
+    "description": "The investment will support Pliant's continued expansion in the United States and Canada, prepare its entry into further international markets, and accelerate its AI roadmap as businesses connect AI agents directly to their financial infrastructure.",
+    "sector": "Fintech",
+    "stage": "Series C",
+    "amount_usd": 80000000,
+    "date": "2026-11-04",
+    "lead_investors": [
+      "Seaya Nova",
+      "Speedinvest"
+    ],
+    "other_investors": [
+      "Illuminate Financial",
+      "Motive Partners",
+      "Molten Ventures"
+    ],
+    "source_url": "https://uk.finance.yahoo.com/news/pliant-raises-80-million-series-135800087.html",
+    "source_name": "uk.finance.yahoo.com",
+    "evidence": "Pliant Raises $80 Million",
     "extraction": "heuristic"
   },
   {
