@@ -20,6 +20,27 @@
     "extraction": "heuristic"
   },
   {
+    "company": "Databento",
+    "description": "The market data platform for modern finance By Databento Inc.",
+    "sector": "Dev Tools/Infra",
+    "stage": "Series C",
+    "amount_usd": 100000000,
+    "date": "2026-11-12",
+    "lead_investors": [
+      "Fifth Down Capital",
+      "an early investor in Databento"
+    ],
+    "other_investors": [
+      "DRW Venture Capital",
+      "Tribe Capital",
+      "Hedosophia"
+    ],
+    "source_url": "https://www.hjnews.com/news/state/databento-raises-100-million-series-c-at-1-1-billion-valuation/article_3c96ffb9-fd58-5ce6-b535-ef849c02075b.amp.html",
+    "source_name": "www.hjnews.com",
+    "evidence": "Databento Raises $100 Million",
+    "extraction": "heuristic"
+  },
+  {
     "company": "Daylight",
     "description": "Daylight says revenue has grown more than 40-fold over the past year.",
     "sector": "Security",
