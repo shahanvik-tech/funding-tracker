@@ -1,5 +1,19 @@
 [
   {
+    "company": "LangChain",
+    "description": "LangChain Raises $300 Million Series C Led by CapitalG at $3 Billion Valuation - citybiz",
+    "sector": "Other",
+    "stage": "Series C",
+    "amount_usd": 300000000,
+    "date": "2026-11-13",
+    "lead_investors": [],
+    "other_investors": [],
+    "source_url": "https://www.citybiz.co/article/933425/langchain-raises-300-million-series-c-led-by-capitalg-at-3-billion-valuation/",
+    "source_name": "www.citybiz.co",
+    "evidence": "LangChain Raises $300 Million",
+    "extraction": "heuristic"
+  },
+  {
     "company": "Q-CTRL",
     "description": "The oversubscribed round mints the newest quantum-sector unicorn and places Q-CTRL among the best-capitalized quantum firms in private markets.",
     "sector": "Defense/Space",
