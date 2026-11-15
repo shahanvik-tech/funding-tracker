@@ -1,13 +1,18 @@
 [
   {
     "company": "LangChain",
-    "description": "LangChain Raises $300 Million Series C Led by CapitalG at $3 Billion Valuation - citybiz",
-    "sector": "Other",
+    "description": "LangChain , a San Francisco-based artificial intelligence infrastructure company, has raised $300 million in Series C funding at a $3 billion valuation, as businesses increase investment in developing, deploying and managing AI agents.",
+    "sector": "Dev Tools/Infra",
     "stage": "Series C",
     "amount_usd": 300000000,
     "date": "2026-11-13",
-    "lead_investors": [],
-    "other_investors": [],
+    "lead_investors": [
+      "CapitalG"
+    ],
+    "other_investors": [
+      "GIC",
+      "DFJ Growth"
+    ],
     "source_url": "https://www.citybiz.co/article/933425/langchain-raises-300-million-series-c-led-by-capitalg-at-3-billion-valuation/",
     "source_name": "www.citybiz.co",
     "evidence": "LangChain Raises $300 Million",
