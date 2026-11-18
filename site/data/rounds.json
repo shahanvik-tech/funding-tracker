@@ -42,6 +42,20 @@
     "extraction": "heuristic"
   },
   {
+    "company": "Freestyle Snacks",
+    "description": "ATLANTA – Freestyle Snacks has raised $5 million in a seed round let by Cutting Horse, a New York-based venture firm.",
+    "sector": "Other",
+    "stage": "Seed",
+    "amount_usd": 5000000,
+    "date": "2026-11-17",
+    "lead_investors": [],
+    "other_investors": [],
+    "source_url": "https://www.foodbusinessnews.net/articles/31360-freestyle-snacks-raises-5-million-in-seed-round",
+    "source_name": "www.foodbusinessnews.net",
+    "evidence": "Freestyle Snacks raises $5 million",
+    "extraction": "heuristic"
+  },
+  {
     "company": "Bharat Semi",
     "description": "Bharat Semi , an Indian semiconductor startup, has raised $24 million in seed funding to develop AI-enabled image sensors, as it seeks to win customers in the United States and elsewhere.",
     "sector": "Health/Bio",
@@ -13168,29 +13182,6 @@
     "source_url": "https://stpetecatalyst.com/tampa-insurance-tech-startup-raises-100m-in-series-a-funding-round/",
     "source_name": "stpetecatalyst.com",
     "evidence": "Tampa insurance tech startup raises $100M",
-    "extraction": "heuristic"
-  },
-  {
-    "company": "Fleet Space",
-    "description": "SAN FRANCISCO – Fleet Space Technologies raised $26.4 million in a Series B investment round that puts a value of $126 million on the Australian startup establishing an internet-of-things satellite constellation.",
-    "sector": "Defense/Space",
-    "stage": "Series B",
-    "amount_usd": 26400000,
-    "date": "2021-11-17",
-    "lead_investors": [
-      "Fleet Space investors Artesian Venture Partners",
-      "Blackbird Ventures",
-      "Grok",
-      "Horizons Ventures"
-    ],
-    "other_investors": [
-      "Alumni Ventures",
-      "Hostplus",
-      "the South Australian Venture Capital Fund"
-    ],
-    "source_url": "https://spacenews.com/fleet-space-series-b/",
-    "source_name": "spacenews.com",
-    "evidence": "Fleet Space raises $26.4 million",
     "extraction": "heuristic"
   }
 ]
