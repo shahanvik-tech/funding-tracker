@@ -1,18 +1,18 @@
 {
-  "last_run": "2026-11-19T17:25:46.259865+00:00",
-  "as_of": "2026-11-19",
-  "window_start": "2021-11-19",
-  "round_count": 766,
+  "last_run": "2026-11-20T17:00:02.863921+00:00",
+  "as_of": "2026-11-20",
+  "window_start": "2021-11-20",
+  "round_count": 767,
   "by_year": {
     "2021": 5,
     "2022": 81,
     "2023": 84,
     "2024": 103,
     "2025": 76,
-    "2026": 417
+    "2026": 418
   },
   "by_extraction": {
-    "heuristic": 659,
+    "heuristic": 660,
     "sec-form-d": 107
   },
   "counts_per_source": {
@@ -57,6 +57,7 @@
     "satnews.com": 1,
     "www.generalatlantic.com": 1,
     "q-ctrl.com": 1,
+    "www.automate.org": 1,
     "Fortune Term Sheet": 1,
     "uk.finance.yahoo.com": 1,
     "www.corporatecomplianceinsights.com": 1,
@@ -120,15 +121,15 @@
   },
   "collection_mode": "refresh",
   "error_summary": {
-    "count": 2,
+    "count": 4,
     "top": [
       [
         "401 Client Error: HTTP Forbidden for url: https:",
-        1
+        2
       ],
       [
         "403 Client Error: Forbidden for url: https://www",
-        1
+        2
       ]
     ]
   },

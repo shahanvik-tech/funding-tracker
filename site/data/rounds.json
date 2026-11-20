@@ -158,6 +158,28 @@
     "extraction": "heuristic"
   },
   {
+    "company": "AFORMIC",
+    "description": "AFORMIC is headquartered in Duncan, South Carolina and builds, deploys, and maintains autonomous industrial robots that automate internal logistics, material transport, and line-feeding operations inside industrial facilities.",
+    "sector": "Defense/Space",
+    "stage": "Seed",
+    "amount_usd": 6950000,
+    "date": "2026-11-12",
+    "lead_investors": [
+      "Veteran Ventures Capital | New Window"
+    ],
+    "other_investors": [
+      "ff Venture Capital (ffVC)",
+      "Mana Ventures",
+      "Red Beard Ventures",
+      "Alamo Angels",
+      "a group of strategic angel investors"
+    ],
+    "source_url": "https://www.automate.org/robotics/news/aformic-raises-6-95-million-seed-round-to-automate-the-industries-that-matter",
+    "source_name": "www.automate.org",
+    "evidence": "AFORMIC raises $6.95 million",
+    "extraction": "heuristic"
+  },
+  {
     "company": "Daylight",
     "description": "Daylight says revenue has grown more than 40-fold over the past year.",
     "sector": "Security",
