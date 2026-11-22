@@ -75,6 +75,26 @@
     "extraction": "heuristic"
   },
   {
+    "company": "Corma",
+    "description": "Meir Orbach 14:00, 16.11.26 Cybersecurity company Corma has raised $125 million in a Series A funding round at a valuation of $1 billion.",
+    "sector": "Security",
+    "stage": "Series A",
+    "amount_usd": 60000000,
+    "date": "2026-11-16",
+    "lead_investors": [
+      "NEA"
+    ],
+    "other_investors": [
+      "Sequoia Capital",
+      "Khosla Ventures",
+      "Coatue"
+    ],
+    "source_url": "https://www.calcalistech.com/ctechnews/article/bjiqapu0me",
+    "source_name": "www.calcalistech.com",
+    "evidence": "Corma raises $60 million",
+    "extraction": "heuristic"
+  },
+  {
     "company": "Bharat Semi",
     "description": "Bharat Semi , an Indian semiconductor startup, has raised $24 million in seed funding to develop AI-enabled image sensors, as it seeks to win customers in the United States and elsewhere.",
     "sector": "Health/Bio",
