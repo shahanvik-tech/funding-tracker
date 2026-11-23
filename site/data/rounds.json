@@ -200,6 +200,24 @@
     "extraction": "heuristic"
   },
   {
+    "company": "Fractile",
+    "description": "Fractile , a British startup developing AI chips, has raised a $720 million Series C backed by Britain’s Sovereign AI Fund with hopes of “ensuring the U.K.",
+    "sector": "Robotics/Hardware",
+    "stage": "Series C",
+    "amount_usd": 720000000,
+    "date": "2026-11-11",
+    "lead_investors": [
+      "Thrive Capital",
+      "Founders Fund",
+      "Lightspeed Venture Partners"
+    ],
+    "other_investors": [],
+    "source_url": "https://techcrunch.com/2026/11/11/with-720m-round-britains-fractile-gets-a-leg-up-in-the-race-for-ai-chips/",
+    "source_name": "TechCrunch",
+    "evidence": "Fractile , a British startup developing AI chips, has raised a $720 million",
+    "extraction": "heuristic"
+  },
+  {
     "company": "Daylight",
     "description": "Daylight says revenue has grown more than 40-fold over the past year.",
     "sector": "Security",
@@ -13227,22 +13245,5 @@
     "source_name": "SEC EDGAR Form D",
     "evidence": "Form D total amount sold $3,499,962; industry Other Technology",
     "extraction": "sec-form-d"
-  },
-  {
-    "company": "Tampa insurance tech startup",
-    "description": "Tampa insurance tech startup raises $100M in Series A funding round",
-    "sector": "AI/ML",
-    "stage": "Series A",
-    "amount_usd": 100000000,
-    "date": "2021-11-22",
-    "lead_investors": [
-      "Tampa-based private equity firm Gries Investment Funds",
-      "venture capital firm TampaBay.Ventures"
-    ],
-    "other_investors": [],
-    "source_url": "https://stpetecatalyst.com/tampa-insurance-tech-startup-raises-100m-in-series-a-funding-round/",
-    "source_name": "stpetecatalyst.com",
-    "evidence": "Tampa insurance tech startup raises $100M",
-    "extraction": "heuristic"
   }
 ]

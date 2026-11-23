@@ -1,15 +1,15 @@
 {
-  "last_run": "2026-11-22T16:21:03.743882+00:00",
-  "as_of": "2026-11-22",
-  "window_start": "2021-11-22",
+  "last_run": "2026-11-23T20:18:22.676067+00:00",
+  "as_of": "2026-11-23",
+  "window_start": "2021-11-23",
   "round_count": 768,
   "by_year": {
-    "2021": 5,
+    "2021": 4,
     "2022": 81,
     "2023": 84,
     "2024": 103,
     "2025": 76,
-    "2026": 419
+    "2026": 420
   },
   "by_extraction": {
     "heuristic": 661,
@@ -20,8 +20,8 @@
     "SEC EDGAR Form D": 107,
     "www.calcalistech.com": 61,
     "www.finsmes.com": 54,
+    "TechCrunch": 38,
     "PR Newswire": 38,
-    "TechCrunch": 37,
     "GlobeNewswire": 28,
     "finance.yahoo.com": 24,
     "www.citybiz.co": 14,
@@ -116,27 +116,14 @@
     "hamburg-business.com": 1,
     "www.cathaycapital.com": 1,
     "www.ventustx.com": 1,
-    "www.lifebiosciences.com": 1,
-    "stpetecatalyst.com": 1
+    "www.lifebiosciences.com": 1
   },
   "collection_mode": "refresh",
   "error_summary": {
-    "count": 5,
+    "count": 1,
     "top": [
       [
-        "401 Client Error: HTTP Forbidden for url: https:",
-        2
-      ],
-      [
         "403 Client Error: Forbidden for url: https://www",
-        1
-      ],
-      [
-        "429 Client Error: Too Many Requests for url: htt",
-        1
-      ],
-      [
-        "Google resolution: 'NoneType' object is not subs",
         1
       ]
     ]
