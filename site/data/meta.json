@@ -1,7 +1,7 @@
 {
-  "last_run": "2026-11-24T19:32:29.044277+00:00",
-  "as_of": "2026-11-24",
-  "window_start": "2021-11-24",
+  "last_run": "2026-11-25T18:40:52.355897+00:00",
+  "as_of": "2026-11-25",
+  "window_start": "2021-11-25",
   "round_count": 769,
   "by_year": {
     "2021": 4,
@@ -54,7 +54,7 @@
     "www.satellitetoday.com": 2,
     "www.securityweek.com": 2,
     "www.grocerydive.com": 2,
-    "satnews.com": 1,
+    "www.satelliteevolution.com": 1,
     "www.generalatlantic.com": 1,
     "q-ctrl.com": 1,
     "www.automate.org": 1,
@@ -120,15 +120,11 @@
   },
   "collection_mode": "refresh",
   "error_summary": {
-    "count": 3,
+    "count": 2,
     "top": [
       [
         "403 Client Error: Forbidden for url: https://www",
         2
-      ],
-      [
-        "401 Client Error: HTTP Forbidden for url: https:",
-        1
       ]
     ]
   },

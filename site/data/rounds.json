@@ -34,16 +34,23 @@
   },
   {
     "company": "Ramon.Space",
-    "description": "17, Denver-based space computing provider Ramon.Space announced it raised $124 million in Series B financing to accelerate the deployment of its onboard computing systems.",
-    "sector": "Defense/Space",
+    "description": "Ramon.Space has raised $124 million in Series B funding to accelerate deployment of its onboard computing systems.",
+    "sector": "Security",
     "stage": "Series B",
     "amount_usd": 124000000,
-    "date": "2026-11-17",
-    "lead_investors": [],
-    "other_investors": [],
-    "source_url": "https://satnews.com/2026/11/17/ramon-space-raises-124-million-series-b-to-scale-orbital-computing-infrastructure/",
-    "source_name": "satnews.com",
-    "evidence": "Ramon.Space Raises $124 Million",
+    "date": "2026-11-18",
+    "lead_investors": [
+      "PSG",
+      "a leading growth equity firm"
+    ],
+    "other_investors": [
+      "StageOne",
+      "Deep Insight",
+      "Grove Ventures"
+    ],
+    "source_url": "https://www.satelliteevolution.com/post/ramon-space-raises-124-million-series-b-leading-the-next-era-of-computing-in-orbit",
+    "source_name": "www.satelliteevolution.com",
+    "evidence": "Ramon.Space raises $124 million",
     "extraction": "heuristic"
   },
   {
