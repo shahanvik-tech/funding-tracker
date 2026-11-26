@@ -54,6 +54,26 @@
     "extraction": "heuristic"
   },
   {
+    "company": "Promise Robotics",
+    "description": "Promise Robotics Raises $40 Million CAD Series B to Scale the Production Infrastructure Powering Homebuilding PR Newswire November 17, 2026 4 min read Round led by White Star Capital follows a multi-year agreement with America's largest homebuilder and the launch of Promise's first U.S.",
+    "sector": "Robotics/Hardware",
+    "stage": "Series B",
+    "amount_usd": 40000000,
+    "date": "2026-11-17",
+    "lead_investors": [
+      "White Star Capital follows a multi-year agreement"
+    ],
+    "other_investors": [
+      "Horizons Ventures",
+      "Radical Ventures",
+      "Public Sector Pension Investment Board (PSP Investments)"
+    ],
+    "source_url": "https://finance.yahoo.com/real-estate/articles/promise-robotics-raises-40-million-140500681.html",
+    "source_name": "finance.yahoo.com",
+    "evidence": "Promise Robotics Raises $40 Million",
+    "extraction": "heuristic"
+  },
+  {
     "company": "Model ML",
     "description": "Back to News & Insights Model ML raises $250 million at $1.5 billion valuation, 18 months after launching from stealth Press Release November 17, 2026 Share Round co-led by General Atlantic and QED Investors takes total funding raised to $350 million as banks, consulting firms and asset managers worldwide deploy personal AI agents across their busi",
     "sector": "Fintech",
